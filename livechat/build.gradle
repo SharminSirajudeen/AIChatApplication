@@ -1,0 +1,78 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+// Replace nisrulz with <your_github_username>
+group='com.github.SharminSirajudeen'
+
+/*ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'livechat'   // Has to be same as your library module name
+
+    publishedGroupId = 'com.github.SharminSirajudeen'
+    libraryName = 'LiveChat'
+    artifact = 'livechat'     // Has to be same as your library module name
+
+    libraryDescription = 'Android Library to make any text into Toast with Awesome prepended to the text'
+
+    // Your github repo link
+    siteUrl = 'https://github.com/SharminSirajudeen/AIChatApplication'
+    gitUrl = 'https://github.com/SharminSirajudeen/AIChatApplication.git'
+    githubRepository= 'SharminSirajudeen/AIChatApplication'
+
+    libraryVersion = '1.0'
+
+    developerId = 'SharminSirajudeen'
+    developerName = 'Sharmin Sirajudeen'
+    developerEmail = 'sharminsirajudeen11@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}*/
+
+
+
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            postprocessing {
+                removeUnusedCode false
+                removeUnusedResources false
+                obfuscate false
+                optimizeCode false
+                proguardFile 'proguard-rules.pro'
+            }
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'ai.api:libai:1.6.11'
+    implementation 'ai.api:sdk:2.0.7@aar'
+    implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'commons-io:commons-io:2.4'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+
+/*// Place it at the end of the file
+apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/bintrayv1.gradle'*/
