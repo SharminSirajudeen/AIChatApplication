@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 
-ext {
+/*ext {
     bintrayRepo = 'maven'
     bintrayName = 'livechat'   // Has to be same as your library module name
 
@@ -24,7 +24,7 @@ ext {
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
-}
+}*/
 
 
 
@@ -70,6 +70,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
 
-// Place it at the end of the file
+/*// Place it at the end of the file
 apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/bintrayv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/bintrayv1.gradle'*/
