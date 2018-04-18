@@ -58,7 +58,7 @@ public class AILiveChat extends AppCompatActivity implements View.OnClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.layout_to_include);
         final AIConfiguration config = new AIConfiguration("d9fcd9bfb2f2468394016b11642a1d5c",
                 AIConfiguration.SupportedLanguages.English,
                 AIConfiguration.RecognitionEngine.System);
